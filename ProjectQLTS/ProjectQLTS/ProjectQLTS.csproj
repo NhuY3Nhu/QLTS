@@ -131,7 +131,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="ChiTietDonHang.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PhanQuyensController.cs" />
+    <Compile Include="Controllers\ThanhToanController.cs" />
     <Compile Include="Controllers\ThanhViensController.cs" />
     <Compile Include="DonHang.cs" />
     <Compile Include="GioHang.cs" />
@@ -155,11 +155,18 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image\diadiem.png" />
+    <Content Include="image\giohang.png" />
+    <Content Include="image\kinhlup.png" />
     <Content Include="image\logo.png" />
+    <Content Include="image\o.jpg" />
+    <Content Include="image\sua1.jpg" />
+    <Content Include="image\sua2.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\qlts.edmx">
@@ -196,14 +203,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\ThanhViens\Create.cshtml" />
     <Content Include="Views\ThanhViens\Delete.cshtml" />
-    <Content Include="Views\ThanhViens\Details.cshtml" />
     <Content Include="Views\ThanhViens\Edit.cshtml" />
     <Content Include="Views\ThanhViens\Index.cshtml" />
-    <Content Include="Views\PhanQuyens\Create.cshtml" />
-    <Content Include="Views\PhanQuyens\Delete.cshtml" />
-    <Content Include="Views\PhanQuyens\Details.cshtml" />
-    <Content Include="Views\PhanQuyens\Edit.cshtml" />
-    <Content Include="Views\PhanQuyens\Index.cshtml" />
+    <Content Include="Views\Shared\View.cshtml" />
+    <Content Include="Views\ThanhToan\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

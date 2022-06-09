@@ -14,40 +14,25 @@ namespace ProjectQLTS.Controllers
     {
         private qlts db = new qlts();
 
-        // GET: ThanhViens
-        /*public ActionResult Index()
-        {
-            var thanhViens = db.ThanhViens.Include(t => t.PhanQuyen);
-            return View(thanhViens.ToList());
-        }*/
-
         // GET: /Link/
         public ActionResult Index(string searchString)
         {
             var links = from l in db.ThanhViens
                         select l;
-
+         
             if (!String.IsNullOrEmpty(searchString))
             {
-                links = links.Where(s => s.HoTen.Contains(searchString));
-            }
+                if (!links.Any())
+                {
+                    links = links.Where(s => s.HoTen.Contains(searchString));
+                }
+                else
+                {
+                    Messagebox("Không tìm thấy nội dung muốn tìm");
+                }
 
+            }
             return View(links);
-        }
-
-        // GET: ThanhViens/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            ThanhVien thanhVien = db.ThanhViens.Find(id);
-            if (thanhVien == null)
-            {
-                return HttpNotFound();
-            }
-            return View(thanhVien);
         }
 
         // GET: ThanhViens/Create
@@ -59,7 +44,7 @@ namespace ProjectQLTS.Controllers
 
         // POST: ThanhViens/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // more details see https://go.microsoft.com/fwlinkq/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "IDThanhVien,HoTen,DiaChi,SDT,MatKhau,IDQuyen")] ThanhVien thanhVien)
@@ -108,12 +93,19 @@ namespace ProjectQLTS.Controllers
             return View(thanhVien);
         }
 
+        public void Messagebox(string xMessage)
+        {
+            Response.Write("<script>alert('" + xMessage + "')</script>");
+        }
+
         public ActionResult Delete(int id)
         {
             ThanhVien thanhVien = db.ThanhViens.Find(id);
+            Messagebox("Đã xóa thành viên");
             db.ThanhViens.Remove(thanhVien);
             db.SaveChanges();
             return RedirectToAction("Index");
+            
         }
 
         protected override void Dispose(bool disposing)

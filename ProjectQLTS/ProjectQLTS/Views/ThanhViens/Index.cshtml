@@ -7,32 +7,34 @@
 <h2>THÀNH VIÊN</h2>
 
 <p>
-    @Html.ActionLink("Thêm thành viên", "Create")
+
+    @Html.AntiForgeryToken()
 
     @using (Html.BeginForm())
     {
-    <p>
-        Title: @Html.TextBox("SearchString") <input type="submit" value="Tìm kiếm" />
-    </p>
+<p>
+
+    @Html.TextBox("SearchString")  <input type="submit" value="Tìm kiếm" /> @Html.ActionLink("Thêm thành viên", "Create")
+    
+</p>
     }
 
 </p>
     <table class="table">
         <tr>
+            
             <th>
-                @Html.DisplayNameFor(model => model.PhanQuyen.TenQuyen)
+                Họ tên
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.HoTen)
+                Địa chỉ
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DiaChi)
+                số điện thoại
             </th>
+            
             <th>
-                @Html.DisplayNameFor(model => model.SDT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MatKhau)
+                Hành động
             </th>
             <th></th>
         </tr>
@@ -40,9 +42,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PhanQuyen.TenQuyen)
-                </td>
+                
                 <td>
                     @Html.DisplayFor(modelItem => item.HoTen)
                 </td>
@@ -52,12 +52,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.SDT)
                 </td>
+                
                 <td>
-                    @Html.DisplayFor(modelItem => item.MatKhau)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.IDThanhVien }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.IDThanhVien })
+                    <i class="glyphicon glyphicon-pencil"></i>@Html.ActionLink(" Sửa", "Edit", new { id = item.IDThanhVien }) |
+                    <i class="glyphicon glyphicon-trash"></i>@Html.ActionLink(" Xóa", "Delete", new { id = item.IDThanhVien })
                 </td>
             </tr>
         }

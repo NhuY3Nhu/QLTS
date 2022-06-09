@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "~/Views/Shared/View.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/StyleSheet1.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/image/logo.png"
+          type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>@ViewBag.Title - Quản lý trà sữa</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="tieude">
+        THANH TOÁN
+    </div>
+    <div class="thanhtoan">
+        <img src="~/image/diadiem.png" class="hinh4" />
+        <p class="tieude1"> Địa chỉ giao hàng: </p>
+        <div class="thanhtoan1">
+
+        </div>
+    </div>
+    <div class="donhang">
+        <div class="tieude3"> Sản phẩm </div>
+        <div class="a">
+            <div class="a1"> Hình ảnh</div>
+            <div class="a2"> Tên trà sữa </div>
+            <div class="a3"> Size </div>
+            <div class="a4"> Đơn giá </div>
+            <div class="a5"> Số lượng </div>
+            <div class="a6"> Thành tiền </div>
+        </div>
+        <div class="b">
+            <img src="~/image/sua1.jpg" class="b1" />
+            <div class="b2"> Trà sữa Matcha </div>
+            <div class="b3"> M </div>
+            <div class="b4"> 20.000 đ </div>
+            <div class="b5"> 2 </div>
+            <div class="b6"> 40.000 đ </div>
+        </div>
+        <div class="c">
+            <img src="~/image/sua2.jpg" class="c1" />
+            <div class="c2"> Trà sữa Full Topping </div>
+            <div class="c3"> L </div>
+            <div class="b4"> 25.000 đ </div>
+            <div class="b5"> 1 </div>
+            <div class="b6"> 25.000 đ </div>
+        </div>
+        <div class="d">
+            Tổng thanh toán: 65.000 đ
+        </div>
+    </div>
+    
+    <div class="phuongthuc">
+        <div class="tieude3"> Phương thức thanh toán </div>
+        <div class="chia" >
+            @Html.RadioButton("Gen", "Male") Ví MOMO
+        </div>
+        <div class="chia">
+            @Html.RadioButton("Gen", "Male") Thanh toán trực tiếp
+        </div>
+        <button class="thanhtoan3">
+            THANH TOÁN
+        </button>
+    </div>
+</body>
+</html>
+

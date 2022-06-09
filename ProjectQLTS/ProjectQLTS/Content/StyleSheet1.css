@@ -1,0 +1,288 @@
+﻿.header {
+    background-color: #d3a4bc;
+    height: 130px;
+    border: 1px solid #000000;
+    display: flex;
+}
+
+    .header .hinh1 {
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 80px;
+    }
+
+    .header .hinh2 {
+        height: 30px;
+        width: 30px;
+        margin-left: 45px;
+        margin-top: 45px;
+    }
+
+    .header .ten {
+        font-weight: bold;
+        font-size: 35px;
+        color: #ffffff;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .header .tim {
+        display: flex;
+        width: 700px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-top: 40px;
+        background-color: #ffffff;
+    }
+
+    .header .tim1 {
+        width: 100px;
+        height: 40px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .header .dangxuat {
+        width: 150px;
+        height: 60px;
+        margin-left: 50px;
+        margin-top: 30px;
+        background-color: #ba769b;
+        font-weight: bold;
+    }
+
+    .header .hinh3 {
+        width: 25px;
+        height: 25px;
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+
+    .header .tim2 {
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+
+.tieude {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.thanhtoan {
+    display: flex;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    margin-left: 0px;
+    height: 90px;
+    width: 1400px;
+}
+
+    .thanhtoan .hinh4 {
+        height: 50px;
+        width: 50px;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+    .thanhtoan .tieude1 {
+        font-size: 17px;
+        margin-top: 23px;
+        margin-left: 40px;
+    }
+
+    .thanhtoan .thanhtoan1 {
+        border: 1px solid #000000;
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 50px;
+        width: 1200px;
+    }
+
+.donhang {
+    border: 1px solid #000000;
+    margin-top: 40px;
+    margin-left: 0px;
+    height: 450px;
+    width: 1400px;
+}
+
+    .donhang .tieude3 {
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 4px;
+        margin-left: 6px;
+    }
+
+.phuongthuc {
+    border: 1px solid #000000;
+    margin-top: 40px;
+    margin-left: 0px;
+    height: 220px;
+    width: 1400px;
+}
+
+    .phuongthuc .tieude3 {
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 4px;
+        margin-left: 6px;
+    }
+
+    .phuongthuc .chia {
+        display: flex;
+    }
+
+    .phuongthuc .hinh5 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .phuongthuc .tieude4 {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+.thanhtoan3 {
+    width: 150px;
+    height: 60px;
+    margin-left: 1200px;
+    margin-top: 10px;
+    background-color: #d6a6be;
+    font-weight: bold;
+}
+
+.donhang .a {
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    width: 1380px;
+    height: 40px;
+    background-color: #cccccc;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding-top: 2px;
+}
+
+.a1 {
+    margin-left: 70px;
+}
+
+.a2 {
+    margin-left: 190px;
+}
+
+.a3 {
+    margin-left: 190px;
+}
+
+.a4 {
+    margin-left: 190px;
+}
+
+.a5 {
+    margin-left: 190px;
+}
+
+.a6 {
+    margin-left: 190px;
+}
+
+.donhang .b {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    width: 1380px;
+    height: 130px;
+    background-color: #d6a6be;
+    margin-left: 20px;
+}
+
+.b1 {
+    width: 110px;
+    height: 110px;
+    margin-left: 59px;
+    margin-top: 20px;
+}
+
+.b2 {
+    margin-top: 55px;
+    margin-left: 180px;
+}
+
+.b3 {
+    margin-top: 55px;
+    margin-left: 160px;
+}
+
+.b4 {
+    margin-top: 55px;
+    margin-left: 205px;
+}
+
+.b5 {
+    margin-top: 55px;
+    margin-left: 190px;
+}
+
+.b6 {
+    margin-top: 55px;
+    margin-left: 270px;
+}
+
+.donhang .c {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    width: 1380px;
+    height: 150px;
+    background-color: #cccccc;
+    margin-left: 20px;
+}
+
+.c1 {
+    width: 110px;
+    height: 110px;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.c2 {
+    margin-top: 55px;
+    margin-left: 180px;
+}
+
+.c3 {
+    margin-top: 55px;
+    margin-left: 125px;
+}
+
+.b4 {
+    margin-top: 55px;
+    margin-left: 205px;
+}
+
+.b5 {
+    margin-top: 55px;
+    margin-left: 190px;
+}
+
+.b6 {
+    margin-top: 55px;
+    margin-left: 270px;
+}
+
+.d {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 1000px;
+}
+.input-group{
+    margin-left: auto;
+    margin-right: 190px;
+    margin-top:5px;
+}

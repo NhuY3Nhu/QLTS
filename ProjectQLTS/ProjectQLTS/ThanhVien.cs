@@ -1,4 +1,4 @@
-namespace ProjectQLTS
+﻿namespace ProjectQLTS
 {
     using System;
     using System.Collections.Generic;
@@ -19,15 +19,19 @@ namespace ProjectQLTS
         public int IDThanhVien { get; set; }
 
         [StringLength(50)]
+        [Required(ErrorMessage = "Vui lòng nhập đầy đủ thông tin!")]
         public string HoTen { get; set; }
 
         [StringLength(50)]
+        [Required(ErrorMessage = "Vui lòng nhập đầy đủ thông tin!")]
         public string DiaChi { get; set; }
 
         [StringLength(10)]
+        [Required(ErrorMessage = "Vui lòng nhập đầy đủ thông tin!")]
         public string SDT { get; set; }
 
         [StringLength(10)]
+        [Required(ErrorMessage = "Vui lòng nhập đầy đủ thông tin!")]
         public string MatKhau { get; set; }
 
         public int? IDQuyen { get; set; }
